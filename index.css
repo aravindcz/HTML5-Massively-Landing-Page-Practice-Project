@@ -9,6 +9,10 @@
     src: url("./assets/fonts/Merriweather-LightItalic.ttf");
 }
 
+@font-face {
+    font-family: "nav";
+    src: url("./assets/fonts/Merriweather-Bold.ttf");
+}
 
 
 *{
@@ -59,7 +63,7 @@ a {
 }
 
 
-#landing{
+#header{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +78,40 @@ a {
     border-color: rgba(0, 115, 255, 0.988);
     transition: .75s;
     cursor: pointer;
+}
+
+
+.nav{
+    margin: 120px 150px 0px 150px;
+    background-color: #696868;
+    border-top: 1px solid rgb(143, 143, 143);
+}
+
+.ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.leftli{
+
+    display: flex;
+    
+}
+
+.rightli{
+    display: flex;
+}
+
+.leftli li,.rightli li{
+    padding: 20px;
+    color: white;
+    font-family: h1 ;
+    font-size: 16px;
+}
+
+.leftli>li:nth-child(1){
+    background-color: white;
 }
 
 
