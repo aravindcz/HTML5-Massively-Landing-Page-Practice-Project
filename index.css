@@ -80,17 +80,23 @@ a {
     cursor: pointer;
 }
 
+.main{
+    margin: 120px 150px 0px 150px;
+}
 
 .nav{
-    margin: 120px 150px 0px 150px;
-    background-color: #696868;
+    
+    background-color: #a09c9c;
     border-top: 1px solid rgb(143, 143, 143);
+    border-bottom: none;
+    margin-bottom: none;
 }
 
 .ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
 
 .leftli{
@@ -110,12 +116,113 @@ a {
     font-size: 16px;
 }
 
-.leftli>li:nth-child(1){
+div.leftli>li:nth-child(1){
     background-color: white;
+    -webkit-text-fill-color: rgb(80, 120, 0);
+    -webkit-text-stroke-color: rgb(249, 244, 244);
+    -webkit-text-stroke-width: 1px;
+}
+
+.leftli li:hover{
+    cursor: pointer;
+    transition: 0.75s;
+    background-color: gray;
+}
+
+.rightli i:hover{
+    cursor:pointer;
+    transition: .75s;
+    color: lightskyblue;
+}
+
+
+main{
+    background-color: #ffffff;
+}
+
+
+.mainarticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
 }
 
 
 
+.fullstory,.articleimg{
+    align-self: center;
+    transition: transform 2s;
+    
+}
 
+
+.mainarticle .datetime{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0px 50px 0px;
+    align-self: stretch;
+
+}
+
+.datetime span{
+    width: 40%;
+    height: 1px;
+    background-color: gray;
+}
+
+.mainarticle h1{
+    font-family: h1;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.mainarticle .datetime{
+    color: black;
+    font-family: italictext;
+    margin-bottom: 50px;
+}
+
+.mainarticle p{
+    color: black;
+    font-family: italictext;
+}
+
+.mainarticle .imgdiv{
+
+    width: 960px;
+    height: 450px;
+    overflow: hidden;
+}
+
+
+
+.mainarticle .articleimg:hover{
+    cursor: pointer;
+    
+    transform: scale(1.2);
+}
+
+.mainarticle .fullstory{
+    margin: 50px 0px;
+    background-color: transparent;
+    color: black;
+    font-style: h1;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid black;
+    letter-spacing: 1px;
+}
+
+.mainarticle h1:hover,.mainarticle .fullstory:hover{
+    color: rgb(21, 224, 255);
+    border-color: rgb(21, 224, 255);
+    cursor: pointer;
+    transition: .5s;
+}
 
 
