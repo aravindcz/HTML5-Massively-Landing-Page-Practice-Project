@@ -81,6 +81,8 @@ a {
 }
 
 .main{
+    display: flex;
+    flex-direction: column;
     margin: 120px 150px 0px 150px;
 }
 
@@ -309,9 +311,123 @@ main{
 
 
 .mainfooter{
-    margin: 20px 0px;
-    height: 100px;
-    width: 100%;
-    background-color: red;
+    margin:60px auto;
+    display: flex;
+    justify-content: center;
+    
 }
+
+.mainfooter span{
+    margin: 0px;
+    border: 1px solid rgb(150, 150, 150);
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    font-style: h1;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mainfooter span:nth-child(1){
+    background-color: rgb(170, 170, 170);
+}
+
+.mainfooter span:hover{
+    cursor: pointer;
+    color: rgb(92, 92, 255);
+    border-color: rgb(79, 79, 199);
+    transition:0.75s;
+}
+
+
+.contactsection{
+    background-color: #fefefe;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.review{
+    flex-grow: 1;
+}
+
+.review form{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgb(100, 96, 96);
+    font-family: h1;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(53, 50, 50);
+}
+
+
+
+
+
+.review form input:last-child{
+align-self: start;
+font-family: h1;
+font-size: 14px;
+font-weight: bold;
+color: rgb(53, 50, 50);
+padding: 10px 25px;
+border: 2px solid black;
+letter-spacing: 1px;
+}
+
+.review form *{
+    margin:5px 50px;
+}
+
+.review form input[type=text] , .review textarea{
+    border: 2px solid rgb(175, 175, 175);
+}
+
+.address{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.address div span:nth-child(2n+1) {
+    font-family: h1;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(53, 50, 50);
+
+}
+
+.address div span:nth-child(2n) {
+    font-family: italictext;
+    font-size: 14px;
+    
+    color: rgb(110, 109, 109);
+
+}
+
+
+
+.address div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgb(175, 175, 175);
+    padding: 20px;
+}
+
+.address div span{
+    flex-grow: 1;
+    margin:10px
+}
+
+.address div:last-child{
+    border-bottom: none;
+}
+
+.address div span i{
+    margin:0px 10px;
+}
+
 
